@@ -203,3 +203,108 @@ transform: skewY(-2deg);
   
 }
 /* End Landing */
+
+/* Start hosting */
+.hosting {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  text-align: center;
+}
+.hosting .container > h1 {
+ color: var(--third-color);
+ margin: 0 0 10px;
+ font-size: 2.5rem;
+}
+.hosting .container > p {
+  color: var(--second-color);
+}
+.hosting .container .search {
+  display: flex;
+  margin: 30px auto;
+  width: 50%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hosting .container .search input[type="text"] {
+  padding: 10px;
+  outline: none;
+  border: none;
+  flex: 1;
+  margin-left: 5px;
+}
+.hosting .container .search .btn {
+  background-color: var(--first-color);
+  color: white;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.hosting .container .search .btn img {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+.hosting .container .search .btn span {
+  font-size: 18px;
+  padding-left: 6px;
+}
+
+@media (max-width:991px) {
+  
+  .hosting .container .search {
+    width: 70%;
+  }
+}
+@media (max-width:767px) {
+  .hosting .container > h1 {
+    font-size: 2rem;
+  }
+  .hosting .container .search {
+    width: 100%;
+    padding: 4px;
+  }
+  .hosting .container .search input[type="text"] {
+    min-width: 200px;
+  }
+  .hosting .container .search .btn {
+    padding: 5px;
+  }
+  .hosting .container .search .btn img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hosting .container .search .btn span {
+    font-size: 12px;
+  }
+}
+
+.hosting .container ul.domain {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hosting .container ul.domain li:first-of-type {
+  background-color: var(--fourth-color);
+  border-radius: 50px;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.hosting .container ul.domain li:not(:first-of-type) {
+  color: var(--third-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* End hosting */
