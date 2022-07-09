@@ -335,7 +335,7 @@ transform: skewY(-2deg);
   color: white;
   background-color: var(--third-color);
   top: 10px;
-  right: -5px;
+  right: -10px;
   transform-origin: center bottom;
   transform: rotate(90deg);
 }
@@ -352,6 +352,7 @@ transform: skewY(-2deg);
 .hosting .container section .box:nth-child(2):hover {
   transform: perspective(200px) translate3d(0,-15px,6px);
 }
+
 @media (max-width:1199px) {
   .hosting .container section .box:nth-child(2) {
     transform: translateY(0);
