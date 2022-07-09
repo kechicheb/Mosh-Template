@@ -326,6 +326,28 @@ transform: skewY(-2deg);
 }
 .hosting .container section .box:nth-child(2) {
   transform: translateY(-15px);
+  position: relative;
+}
+.hosting .container section .box:nth-child(2) .popular {
+  position: absolute;
+  padding: 8px 40px;
+  font-size: 22px;
+  color: white;
+  background-color: var(--third-color);
+  top: 10px;
+  right: -5px;
+  transform-origin: center bottom;
+  transform: rotate(90deg);
+}
+.hosting .container section .box:nth-child(2) .popular::after {
+  content: "";
+  position: absolute;
+  border: 25px solid;
+  border-color: transparent var(--fourth-color) transparent transparent;
+  right: -2px;
+  top: 50%;
+  transform: translate(0%,-50%);
+
 }
 .hosting .container section .box:nth-child(2):hover {
   transform: perspective(200px) translate3d(0,-15px,6px);
@@ -338,6 +360,7 @@ transform: skewY(-2deg);
     transform: perspective(200px) translate3d(0,0,6px);
   }
 }
+
 .hosting .container section .box .head {
   padding: 20px;
   color: white;
